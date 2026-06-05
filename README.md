@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT OAP Industrial Solutions</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            line-height:1.6;
+            color:#333;
+        }
+
+        header{
+            background:#0d1b2a;
+            color:white;
+            padding:20px 50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            font-size:30px;
+            font-weight:bold;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+        }
+
+        nav ul li{
+            margin-left:25px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .hero{
+            height:80vh;
+            background:linear-gradient(rgba(0,0,0,.6),
+            rgba(0,0,0,.6)),
+            url("factory.jpg");
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+            padding:20px;
+        }
+
+        .hero h1{
+            font-size:50px;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            font-size:20px;
+            margin-bottom:20px;
+        }
+
+        .btn{
+            background:#fca311;
+            color:white;
+            padding:12px 25px;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        section{
+            padding:70px 10%;
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:30px;
+            color:#0d1b2a;
+        }
+
+        .services{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            border:1px solid #ddd;
+            padding:25px;
+            border-radius:10px;
+            text-align:center;
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        .kbli-table{
+            width:100%;
+            border-collapse:collapse;
+        }
+
+        .kbli-table th,
+        .kbli-table td{
+            border:1px solid #ddd;
+            padding:12px;
+        }
+
+        .kbli-table th{
+            background:#0d1b2a;
+            color:white;
+        }
+
+        footer{
+            background:#0d1b2a;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        @media(max-width:768px){
+            header{
+                flex-direction:column;
+            }
+
+            nav ul{
+                margin-top:15px;
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+            .hero h1{
+                font-size:35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">One Axis Precision</div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#kbli">KBLI</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h1>PT OAP Industrial Solutions</h1>
+        <p>
+            Engineering • Trading • Maintenance • Manufacturing
+        </p>
+
+        <a href="#contact" class="btn">
+            Contact Us
+        </a>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+
+    <p>
+        PT OAP Industrial Solutions is a company engaged in engineering, industrial machinery trading, spare parts, electrical installation, machine maintenance, fabrication, and compressed air system solutions.
+      
+    </p>
+</section>
+
+<section id="services">
+    <h2>Services</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>Engineering</h3>
+            <p>
+                Technical consulting, system design, 
+              energy audits, and project management.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Trading</h3>
+            <p>
+                Industrial machinery, compressors,
+electric motors, pumps, and spare parts.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Maintenance</h3>
+            <p>
+                Preventive maintenance,
+                overhaul dan troubleshooting.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Fabrication</h3>
+            <p>
+                Welding, machining,
+                skid system dan custom fabrication.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section id="products">
+    <h2>Products</h2>
+
+    <ul>
+        <li>Air Compressor and Parts</li>
+        <li>Air Dryer</li>
+        <li>Air Receiver Tank</li>
+        <li>Industrial Pump</li>
+        <li>Electric Motor</li>
+        <li>Gearbox</li>
+        <li>Industrial Spare Parts</li>
+    </ul>
+</section>
+
+<section id="kbli">
+    <h2>KBLI Perusahaan</h2>
+
+    <table class="kbli-table">
+        <tr>
+            <th>KBLI</th>
+            <th>Bidang Usaha</th>
+        </tr>
+
+        <tr>
+            <td>71102</td>
+            <td>Aktivitas Keinsinyuran dan Konsultasi Teknis</td>
+        </tr>
+
+        <tr>
+            <td>46591</td>
+            <td>Perdagangan Besar Mesin Industri dan Sparepart</td>
+        </tr>
+
+        <tr>
+            <td>33120</td>
+            <td>Reparasi Mesin</td>
+        </tr>
+
+        <tr>
+            <td>43211</td>
+            <td>Instalasi Listrik</td>
+        </tr>
+
+        <tr>
+            <td>25920</td>
+            <td>Jasa Pengerjaan Khusus Logam dan Fabrikasi</td>
+        </tr>
+    </table>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <p>Email : oapindustrialsolution@gmail.com</p>
+    <p>Telepon : +62 877758888496</p>
+    <p>Bandung, Jawa Barat, Indonesia</p>
+</section>
+
+<footer>
+    <p>
+        © 2026 PT OAP Industrial Solutions.
+        All Rights Reserved.
+    </p>
+</footer>
+
+</body>
+</html>
